@@ -1,4 +1,3 @@
-process.stdout.write('hello from spinner1.js... \rheyyy\n');
 let time = 100;
 const characters = ["|", "/", "-", "\\", "|", "/", "-", "\\", "|"];
 
@@ -8,4 +7,6 @@ for (const letter of characters) {
   }, time);
   time += 200;
 }
-setTimeout(() => process.stdout.write("\n"), time);
+setTimeout(() => {
+  process.stdout.write("\n");
+}, time);
